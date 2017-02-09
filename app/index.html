@@ -33,11 +33,24 @@
   -->
   <script src="bower_components/angular/angular.js"></script>
   <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/3.6.6/firebase.js"></script>
+  <script src="https://cdn.firebase.com/libs/angularfire/2.3.0/angularfire.min.js"></script>
   <script src="app.js"></script>
   <script src="view1/view1.js"></script>
   <script src="view2/view2.js"></script>
   <script src="components/version/version.js"></script>
   <script src="components/version/version-directive.js"></script>
   <script src="components/version/interpolate-filter.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyDRr7uoqiXsJLd5GsDnq8JvB0Q-28S7iU0",
+      authDomain: "project-ec088.firebaseapp.com",
+      databaseURL: "https://project-ec088.firebaseio.com",
+      storageBucket: "project-ec088.appspot.com",
+      messagingSenderId: "142025845607"
+    };
+    firebase.initializeApp(config);
+  </script>
 </body>
 </html>
